@@ -2,6 +2,7 @@ package com.server.filesystem.controller;
 
 import com.server.filesystem.service.FileSystemService;
 import com.server.filesystem.response.ResponseFile;
+import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -9,7 +10,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import reactor.core.publisher.Mono;
 
 import java.io.IOException;
@@ -24,6 +24,7 @@ public class FileSystemController {
 
     private final FileSystemService fileSystemService;
 
+    @ApiOperation("List already saved files.")
     @GetMapping
     public List<ResponseFile> getFiles() {
         return fileSystemService.getFiles().stream()
@@ -33,6 +34,7 @@ public class FileSystemController {
                 .toList();
     }
 
+    @ApiOperation("Download csv file of given id.")
     @GetMapping("{id}")
     public ResponseEntity<byte[]> getFile(@PathVariable Long id) {
         var file = fileSystemService.getFile(id);
@@ -42,12 +44,14 @@ public class FileSystemController {
                 .body(file.getContent());
     }
 
+    @ApiOperation("Upload file.")
     @ResponseStatus(HttpStatus.OK)
     @PostMapping
     public Mono<Void> uploadFile(@RequestParam("file") MultipartFile file) throws IOException {
         return fileSystemService.storeFile(file);
     }
 
+    @ApiOperation("Remove file of given id.")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping
     public Mono<Void> removeFile(@RequestParam("id") Long id) {

@@ -1,4 +1,4 @@
-package com.server.filesystem.db.model;
+package com.invoicer.account.model;
 
 import lombok.*;
 
@@ -10,12 +10,10 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Getter
 @Setter
-public class StorageFile {
+public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
-    @Lob
-    private byte[] content;
-    private String type;
+    private String owner;
+    private Long cashAmount;
 }

@@ -1,8 +1,13 @@
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: password
+
+  mvc:
+    path match:
+      matching-strategy: ant_path_matcher
 
   servlet:
     multipart:
@@ -13,5 +18,19 @@ spring:
     hibernate:
       ddl-auto: create
 
+  kafka:
+    producer:
+      value-serializer: com.server.event.util.EventDTOSerializer
+    consumer:
+      value-deserializer: com.server.event.util.ResponseEventDTODeserializer
+
+    bootstrap-servers: localhost:9092
+
+
 kafka:
-  input_topic: input
+  input_topic: input_topic
+  finished_topic: finished_topic
+  failed_topic: failed_topic
+
+server:
+  port: 8099
