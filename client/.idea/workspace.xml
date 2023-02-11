@@ -5,40 +5,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54e5fd51-bd05-4961-bbd8-4b285bf1f0dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/filesystem/FileList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navigation/navbar/Navbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/04dc29f16d8b8c912f113fb12d382f60f1f30675" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/090c2bad998b8c28f3ed82eaac87a23771f6824e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1fc1c06a0502bf303f8ba35e530938a98e7e35b2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/0/20137a9e94744624390b6748bc96df5ca1579b71" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/39129446b425a1d640160c068e4194e96639eedf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/a/4a7b99bdbee5792679d347b6474463bf5e14b66d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/5623a681875211c0a9fc15b8e10c240503a73046" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5ab44fe33ca96299f51ad4778a73e425b92bf439" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/61ebb9fd6e8cf9082658121d5d81e297791dacd0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6a41d97e344937b35b9b149f871496b145e62640" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6bfb0dd66a5bf2af617c23ad0dd639a7bc9d6117" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6d3a8cd532ece5b4ddbd4b3b6a678ba686d300bc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/7030d0b2f71b999ff89a343de08c414af32fc93a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/71c20a341bfe32aa5cd5b4384e94f942bab6a7d3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/3/835da56f32df714aaed6285a5b7fc3a7807851e4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/86fea1fe5d3d0b56725f3f7ec8eb741e3e2c0533" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/c/8c13d221ba1872a0cce1f9f0284980e3caf9f84c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/a/aa7165aefcf8ee3d73539e99ab007daf1aa18d8d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/4/b4a8ba258f0da2e4b56b572e725f081d510ff1ef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/5/c5d38a62d1faae90a2acaa34b79a7ef365c917e4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d938938695d447dadda115e28781c6541f53fc4f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee38cc374b2c1c1a755f9eba1e2363f128fee630" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fa288d1472d29beccb489a676f68739ad365fc47" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Toast.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/filesystem/AddFileModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/filesystem/DeleteFileModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/filesystem/StyledFileMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/invoice/InvoiceList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/no-data/NoData.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/no-data/NoData.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/http-commons.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/StorageFile.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/ToastState.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/images/no-data.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/FileSystemService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/.idea/modules/com.server.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/.idea/modules/invoicer.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/.idea/server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/event/enums/EventProcessingState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/exception/FileAlreadyInvoicedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/invoice/dto/InvoiceStatusDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../server/invoice-resolver/src/main/resources/loadCustomers.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/tasks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/filesystem/file-list/file-list.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/filesystem/file-list/file-list.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/filesystem/file-list/file-list.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/filesystem/file-list/file-list.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/filesystem/filesystem-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/filesystem/filesystem.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/navigation/navigation.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/shared.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/filesystem/FileList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/filesystem/FileList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/event/EventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/event/db/repository/EventRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/event/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/event/EventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/event/mapper/EventToDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/event/mapper/EventToDTOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/event/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/event/db/model/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/exception/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/filesystem/controller/FileSystemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/filesystem/controller/FileSystemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/filesystem/db/model/StorageFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/filesystem/db/model/StorageFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/filesystem/mapper/CSVFileToEventsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/filesystem/mapper/CSVFileToEventsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/filesystem/mapper/StorageToResponseFIleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/filesystem/mapper/StorageToResponseFileMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/filesystem/response/ResponseFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/filesystem/response/ResponseFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/filesystem/service/FileSystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/filesystem/service/FileSystemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/filesystem/util/CSVFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/filesystem/util/CSVFileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/invoice/controller/InvoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/invoice/controller/InvoiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/invoice/service/InvoiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/invoice/service/InvoiceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/kafka/service/KafkaEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/kafka/service/KafkaEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/kafka/service/KafkaEventSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/java/com/server/kafka/service/KafkaEventSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-filesystem/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/invoice-resolver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../server/invoice-resolver/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +92,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript File" />
+        <option value="CSS File" />
         <option value="TypeScript JSX File" />
       </list>
     </option>
@@ -66,23 +112,38 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/kaklimas/Studies/travel-now",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/home/kaklimas/Projects/kafka/client/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/home/kaklimas/Projects/kafka/client/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/resources/images" />
+      <recent name="$PROJECT_DIR$/src/components/no-data" />
+      <recent name="$PROJECT_DIR$/src/model" />
+      <recent name="$PROJECT_DIR$/src/config" />
       <recent name="$PROJECT_DIR$/src/components/navigation/navbar" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="npm.Run">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="Run" type="js.build_tools.npm" temporary="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -95,6 +156,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.Run" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -104,11 +170,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674391549628</updated>
-      <workItem from="1674391551300" duration="3504000" />
+      <workItem from="1674391551300" duration="4212000" />
+      <workItem from="1674922106427" duration="410000" />
+      <workItem from="1674923767489" duration="5632000" />
+      <workItem from="1675345362678" duration="3036000" />
+      <workItem from="1675969443559" duration="1900000" />
+      <workItem from="1676047847043" duration="7134000" />
+      <workItem from="1676135327249" duration="12132000" />
+      <workItem from="1676147519869" duration="6278000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

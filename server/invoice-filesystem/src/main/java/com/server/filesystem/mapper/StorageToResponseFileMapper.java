@@ -8,11 +8,13 @@ import lombok.NoArgsConstructor;
 import static com.server.filesystem.util.FileDownloadPathBuilder.build;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
-public class StorageToResponseFIleMapper {
-    public static ResponseFile map(StorageFile csvFile, Long id) {
-        var url = build(id);
+public class StorageToResponseFileMapper {
+    public static ResponseFile map(StorageFile csvFile) {
+        var url = build(csvFile.getId());
         return ResponseFile.builder()
+                .id(csvFile.getId())
                 .name(csvFile.getName())
+                .storageDate(csvFile.getStorageDate())
                 .url(url)
                 .size(csvFile.getContent().length)
                 .build();
