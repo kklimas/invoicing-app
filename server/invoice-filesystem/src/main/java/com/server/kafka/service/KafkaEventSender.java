@@ -1,10 +1,8 @@
 package com.server.kafka.service;
 
 import com.server.event.dto.EventDTO;
-import com.server.event.model.Event;
+import com.server.event.db.model.Event;
 import lombok.RequiredArgsConstructor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.KafkaHeaders;

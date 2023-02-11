@@ -14,11 +14,11 @@ public class KafkaEventListener {
 
     @KafkaListener(topics = "finished_topic", groupId = "group")
     public void consumeFinishedEvent(ResponseEventDTO event) {
-        eventService.setDoneStatus(event.getId());
+        eventService.setDoneStatus(event);
     }
 
     @KafkaListener(topics = "failed_topic", groupId = "group")
     public void consumeFailEvent(ResponseEventDTO event) {
-        eventService.setFailedStatus(event.getId());
+        eventService.setFailedStatus(event);
     }
 }

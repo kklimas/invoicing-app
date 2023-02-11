@@ -1,9 +1,12 @@
 package com.server.invoice.service;
 
-import com.server.event.EventService;
 import com.server.enums.OperationStatus;
-import com.server.event.model.Event;
+import com.server.event.EventService;
+import com.server.event.db.model.Event;
+import com.server.event.enums.EventProcessingState;
+import com.server.event.mapper.EventToDTOMapper;
 import com.server.filesystem.service.FileSystemService;
+import com.server.invoice.dto.InvoiceStatusDTO;
 import com.server.kafka.service.KafkaEventSender;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -20,34 +23,45 @@ public class InvoiceService {
     private final EventService eventService;
     private final KafkaEventSender kafkaService;
 
-    public OperationStatus getInvoiceStatus(Long id) {
-        var events = eventService.findAllByFileId(id);
+    public InvoiceStatusDTO checkInvoice(Long id) {
+        var events = eventService.findEventsByEventId(id);
         if (events.isEmpty()) {
-            return OperationStatus.NOT_STARTED;
+            return givenInvoiceStatusResponse(OperationStatus.NOT_STARTED);
         }
-        var eventStatuses = events.stream()
-                .map(Event::getEventStatus)
-                .toList();
-        if (eventStatuses.stream().allMatch(status -> OperationStatus.PROCESSING != status)) {
-            if (eventStatuses.contains(OperationStatus.FAILED)) {
-                return OperationStatus.PARTIAL;
+        if (events.stream().allMatch(e -> EventProcessingState.PROCESSING != e.getEventState())) {
+            var failedEvents = events.stream()
+                    .filter(s -> EventProcessingState.FAILED == s.getEventState())
+                    .toList();
+            if (!failedEvents.isEmpty()) {
+                return failedEvents.size() == events.size()
+                        ? givenInvoiceStatusResponse(OperationStatus.FAILED, failedEvents)
+                        : givenInvoiceStatusResponse(OperationStatus.PARTIAL, failedEvents);
             }
-            return OperationStatus.DONE;
+            return givenInvoiceStatusResponse(OperationStatus.DONE);
         }
 
-        return OperationStatus.PROCESSING;
+        return givenInvoiceStatusResponse(OperationStatus.PROCESSING);
     }
 
     public Mono<Void> invoice(Long id) throws IOException {
-        var events = fileSystemService.getEventsFromFile(id);
-        events = saveEvents(events);
+        var events = fileSystemService.saveEventsFromFile(id);
         kafkaService.sendEvents(events);
-
         return Mono.empty();
     }
 
-    private List<Event> saveEvents(List<Event> events) {
-        events.forEach(e -> e.setEventStatus(OperationStatus.PROCESSING));
-        return eventService.saveAll(events);
+    private InvoiceStatusDTO givenInvoiceStatusResponse(OperationStatus status) {
+        return InvoiceStatusDTO.builder()
+                .invoiceStatus(status)
+                .build();
+    }
+
+    private InvoiceStatusDTO givenInvoiceStatusResponse(OperationStatus status, List<Event> failedEvents) {
+        var invoiceStatus = givenInvoiceStatusResponse(status);
+        if (failedEvents != null) {
+            invoiceStatus.setFailedEvents(failedEvents.stream()
+                    .map(EventToDTOMapper::map)
+                    .toList());
+        }
+        return invoiceStatus;
     }
 }

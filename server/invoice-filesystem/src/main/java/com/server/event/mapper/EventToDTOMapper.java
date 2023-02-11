@@ -1,7 +1,7 @@
 package com.server.event.mapper;
 
 import com.server.event.dto.EventDTO;
-import com.server.event.model.Event;
+import com.server.event.db.model.Event;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 

@@ -1,8 +1,10 @@
-package com.server.event.model;
+package com.server.event.db.model;
 
-import com.server.enums.OperationStatus;
-import com.server.filesystem.db.model.StorageFile;
-import lombok.*;
+import com.server.event.enums.EventProcessingState;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
@@ -10,17 +12,15 @@ import javax.persistence.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
+@Data
 public class Event {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @ManyToOne
-    @JoinColumn(name = "file_id")
-    private StorageFile storageFile;
+    private Long fileId;
     private Long accountId;
     @Enumerated(EnumType.STRING)
-    private OperationStatus eventStatus;
+    private EventProcessingState eventState;
+    private String message;
     private Long cash;
 }

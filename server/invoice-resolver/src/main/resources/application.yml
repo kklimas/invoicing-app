@@ -15,7 +15,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: validate
   kafka:
     producer:
       value-serializer: com.invoicer.event.util.EventSerializer

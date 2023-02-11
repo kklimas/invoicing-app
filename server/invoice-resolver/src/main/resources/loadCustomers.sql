@@ -1,0 +1,11 @@
+insert into account (id, cash_amount, owner) values(0, 5500, 'Izabelle Jackson');
+insert into account (id, cash_amount, owner) values(1, 2100, 'John Brown');
+insert into account (id, cash_amount, owner) values(2, 1200, 'Jamie Anderson');
+insert into account (id, cash_amount, owner) values(3, 65000, 'Frankie De Jong');
+insert into account (id, cash_amount, owner) values(4, 12000, 'Sergio Busquests');
+insert into account (id, cash_amount, owner) values(5, 100, 'Ter Stegen');
+insert into account (id, cash_amount, owner) values(6, 120000, 'Cristiano Ronaldo');
+insert into account (id, cash_amount, owner) values(7, 55000, 'Andrea Balotelli');
+insert into account (id, cash_amount, owner) values(8, 100000, 'Louis Suarez');
+insert into account (id, cash_amount, owner) values(9, 21000, 'Hugh Jackman');
+insert into account (id, cash_amount, owner) values(10, 11000, 'Anrea Pirlo');

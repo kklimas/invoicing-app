@@ -1,6 +1,7 @@
 package com.server.filesystem.mapper;
 
-import com.server.event.model.Event;
+import com.server.event.db.model.Event;
+import com.server.filesystem.db.model.StorageFile;
 import com.server.filesystem.enums.CSVColumn;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
@@ -11,7 +12,7 @@ import java.util.stream.StreamSupport;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class CSVFileToEventsMapper {
-    public static List<Event> map(Iterable<CSVRecord> csvRecords, Long id) {
+    public static List<Event> map(Iterable<CSVRecord> csvRecords, StorageFile file) {
         return StreamSupport.stream(csvRecords.spliterator(), false)
                 .map(csvRecord -> {
                     var accountId = Long.parseLong(csvRecord.get(CSVColumn.ACCOUNT_ID));
@@ -19,7 +20,7 @@ public class CSVFileToEventsMapper {
 
                     return Event.builder()
                             .accountId(accountId)
-                            .fileId(id)
+                            .fileId(file.getId())
                             .cash(cash)
                             .build();
                 })

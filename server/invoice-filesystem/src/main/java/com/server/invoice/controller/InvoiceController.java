@@ -1,6 +1,6 @@
 package com.server.invoice.controller;
 
-import com.server.enums.OperationStatus;
+import com.server.invoice.dto.InvoiceStatusDTO;
 import com.server.invoice.service.InvoiceService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -16,8 +16,8 @@ public class InvoiceController {
     private final InvoiceService invoiceService;
 
     @GetMapping("{id}")
-    public Mono<OperationStatus> getInvoiceStatus(@PathVariable Long id) {
-        return Mono.just(invoiceService.getInvoiceStatus(id));
+    public Mono<InvoiceStatusDTO> checkInvoice(@PathVariable Long id) {
+        return Mono.just(invoiceService.checkInvoice(id));
     }
 
     @PostMapping("{id}")

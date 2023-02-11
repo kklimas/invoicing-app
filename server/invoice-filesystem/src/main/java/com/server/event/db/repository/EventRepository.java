@@ -1,6 +1,6 @@
-package com.server.event;
+package com.server.event.db.repository;
 
-import com.server.event.model.Event;
+import com.server.event.db.model.Event;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

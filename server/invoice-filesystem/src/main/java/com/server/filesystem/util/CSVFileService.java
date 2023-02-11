@@ -1,6 +1,7 @@
 package com.server.filesystem.util;
 
-import com.server.event.model.Event;
+import com.server.event.db.model.Event;
+import com.server.filesystem.db.model.StorageFile;
 import com.server.filesystem.enums.CSVColumn;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
@@ -14,7 +15,7 @@ import static com.server.filesystem.mapper.CSVFileToEventsMapper.map;
 
 @Service
 public class CSVFileService {
-    public List<Event> getEventsFromFile(InputStream is, Long id) throws IOException {
+    public List<Event> getEventsFromFile(InputStream is, StorageFile file) throws IOException {
         var fileReader = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
 
         var csvFormat = CSVFormat.Builder.create()
@@ -25,6 +26,6 @@ public class CSVFileService {
                 .build();
 
         var csvParser = new CSVParser(fileReader, csvFormat);
-        return map(csvParser.getRecords(), id);
+        return map(csvParser.getRecords(), file);
     }
 }

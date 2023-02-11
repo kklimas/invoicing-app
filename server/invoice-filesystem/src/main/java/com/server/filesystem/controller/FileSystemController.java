@@ -1,7 +1,8 @@
 package com.server.filesystem.controller;
 
-import com.server.filesystem.service.FileSystemService;
+import com.server.filesystem.mapper.StorageToResponseFileMapper;
 import com.server.filesystem.response.ResponseFile;
+import com.server.filesystem.service.FileSystemService;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
@@ -15,11 +16,10 @@ import reactor.core.publisher.Mono;
 import java.io.IOException;
 import java.util.List;
 
-import static com.server.filesystem.mapper.StorageToResponseFIleMapper.map;
-
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/filesystem")
+@CrossOrigin
 public class FileSystemController {
 
     private final FileSystemService fileSystemService;
@@ -28,9 +28,7 @@ public class FileSystemController {
     @GetMapping
     public List<ResponseFile> getFiles() {
         return fileSystemService.getFiles().stream()
-                .map(file ->
-                        map(file, file.getId())
-                )
+                .map(StorageToResponseFileMapper::map)
                 .toList();
     }
 
@@ -51,10 +49,10 @@ public class FileSystemController {
         return fileSystemService.storeFile(file);
     }
 
-    @ApiOperation("Remove file of given id.")
+    @ApiOperation("Delete file of given id.")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    @DeleteMapping
-    public Mono<Void> removeFile(@RequestParam("id") Long id) {
+    @DeleteMapping("{id}")
+    public Mono<Void> removeFile(@PathVariable("id") Long id) {
         return fileSystemService.removeFileById(id);
     }
 }
